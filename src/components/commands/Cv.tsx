@@ -11,7 +11,7 @@ const Cv: React.FC = () => {
   useEffect(() => {
     if (rerender && currentCommand[0] === "cv" && currentCommand.length <= 1) {
       const link = document.createElement("a");
-      link.href = "/Ahmad_Akel_CV.pdf";
+      link.href = `${import.meta.env.BASE_URL}Ahmad_Akel_CV.pdf`;
       link.download = "Ahmad_Akel_CV.pdf";
       document.body.appendChild(link);
       link.click();

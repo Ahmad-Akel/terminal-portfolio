@@ -6,7 +6,9 @@ import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
+// GitHub Project Pages: https://<user>.github.io/<repo>/
 export default defineConfig({
+  base: "/terminal-portfolio/",
   plugins: [
     react(),
     VitePWA({
